@@ -80,22 +80,28 @@ Cela installe Streamlit, Folium, la bibliothèque Sentinel Hub, NumPy, Pillow, e
 
 > **Note** : l'installation peut prendre 1 à 3 minutes selon votre connexion.
 
-### 4. Renseigner les clés API
+### 4. Configurer les clés API
 
-Les clés s'entrent **directement dans la sidebar de l'application**, dans la section **🔑 Credentials Copernicus**. Vous n'avez besoin de les saisir qu'une fois par session.
+Copiez le fichier d'exemple fourni :
 
-**Optionnel — pré-remplissage automatique via `.env`**
+```bash
+# Mac / Linux
+cp .env.example .env
 
-Si vous ne voulez pas ressaisir vos clés à chaque démarrage, créez un fichier `.env` à la racine du projet :
+# Windows
+copy .env.example .env
+```
+
+Ouvrez le fichier `.env` avec un éditeur de texte et remplissez vos clés (voir section suivante pour les obtenir) :
 
 ```
 SH_CLIENT_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 SH_CLIENT_SECRET=votre_secret_ici
 ```
 
-L'application détecte ce fichier et pré-remplit les champs de la sidebar automatiquement. Sans ce fichier, tout fonctionne exactement pareil — vous remplissez juste les champs à la main.
+L'application détecte ce fichier au démarrage et pré-remplit automatiquement les champs de la sidebar. **Sans ce fichier, tout fonctionne aussi** — vous saisissez simplement vos clés à la main dans la section 🔑 de la sidebar à chaque session.
 
-> **Si vous utilisez `.env`** : ne le commitez jamais sur GitHub. Il est déjà listé dans `.gitignore`.
+> **Important** : `.env` contient vos secrets. Il est listé dans `.gitignore` et ne sera jamais envoyé sur GitHub. Seul `.env.example` (sans valeurs réelles) est commité.
 
 ---
 
