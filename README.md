@@ -49,8 +49,8 @@ Dessinez n'importe quelle zone sur la carte → l'app la découpe automatiquemen
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/0xBenD/Sentinel-Pipe.git
-cd Sentinel-Pipe
+git clone https://github.com/votre-nom/satellite-zone-scanner.git
+cd satellite-zone-scanner
 ```
 
 ### 2. Créer un environnement virtuel Python
@@ -80,26 +80,22 @@ Cela installe Streamlit, Folium, la bibliothèque Sentinel Hub, NumPy, Pillow, e
 
 > **Note** : l'installation peut prendre 1 à 3 minutes selon votre connexion.
 
-### 4. Configurer les clés API
+### 4. Renseigner les clés API
 
-Créez un fichier `.env` à la racine du projet (là où se trouve `satellite_tracker.py`) :
+Les clés s'entrent **directement dans la sidebar de l'application**, dans la section **🔑 Credentials Copernicus**. Vous n'avez besoin de les saisir qu'une fois par session.
 
-```bash
-# Mac / Linux
-touch .env
+**Optionnel — pré-remplissage automatique via `.env`**
 
-# Windows
-type nul > .env
-```
-
-Ouvrez ce fichier avec un éditeur de texte et ajoutez vos clés (voir section suivante pour les obtenir) :
+Si vous ne voulez pas ressaisir vos clés à chaque démarrage, créez un fichier `.env` à la racine du projet :
 
 ```
 SH_CLIENT_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 SH_CLIENT_SECRET=votre_secret_ici
 ```
 
-> **Important** : ne commitez jamais ce fichier sur GitHub. Il est déjà listé dans `.gitignore`.
+L'application détecte ce fichier et pré-remplit les champs de la sidebar automatiquement. Sans ce fichier, tout fonctionne exactement pareil — vous remplissez juste les champs à la main.
+
+> **Si vous utilisez `.env`** : ne le commitez jamais sur GitHub. Il est déjà listé dans `.gitignore`.
 
 ---
 

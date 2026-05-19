@@ -1,0 +1,24 @@
+# Credentials — ne jamais committer
+.env
+
+# Environnement virtuel Python
+venv_satellite/
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Images téléchargées (potentiellement très volumineuses)
+downloads/
+
+# Fichiers macOS
+.DS_Store
+
+# Fichiers temporaires Streamlit
+.streamlit/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
