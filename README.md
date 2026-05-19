@@ -49,8 +49,8 @@ Dessinez n'importe quelle zone sur la carte → l'app la découpe automatiquemen
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/votre-nom/satellite-zone-scanner.git
-cd satellite-zone-scanner
+git clone https://github.com/0xBenD/Sentinel-Pipe.git
+cd Sentinel-Pipe
 ```
 
 ### 2. Créer un environnement virtuel Python
