@@ -49,8 +49,8 @@ Dessinez n'importe quelle zone sur la carte → l'app la découpe automatiquemen
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/votre-nom/satellite-zone-scanner.git
-cd satellite-zone-scanner
+git clone https://github.com/0xBenD/Sentinel-Pipe.git
+cd Sentinel-Pipe
 ```
 
 ### 2. Créer un environnement virtuel Python
@@ -453,7 +453,5 @@ streamlit run satellite_tracker.py --server.port 8502
 ---
 
 ## Licence
-
-Ce projet est open source. Voir le fichier `LICENSE` pour les détails.
 
 Les images Sentinel-2 sont fournies par l'**Agence Spatiale Européenne (ESA)** et distribuées gratuitement via le programme **Copernicus** de l'Union Européenne.
